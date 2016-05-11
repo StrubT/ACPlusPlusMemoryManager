@@ -6,7 +6,11 @@
 // MEMORY MANAGER //
 ////////////////////
 
-enum MemAllocType { Single, Array };
+enum MemAllocType {
+
+	Single,
+	Array
+};
 
 struct MemAlloc {
 
