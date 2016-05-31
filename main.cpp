@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-#include "MemMngr_strut1.h"
+//#include "MemMngr_strut1.h"
 
 using namespace std;
 
@@ -40,7 +40,7 @@ int main() {
 	vector<int>* pV1 = new vector<int>;
 	vector<int>* pV2 = new vector<int>[100];
 
-	delete pi1;
+	//delete pi1;
 	delete[] pi2;
 	delete pc1;
 	delete[] pc2;
@@ -49,7 +49,7 @@ int main() {
 	delete pB1;
 	delete[] pB2;
 	delete pS1;
-	//delete [] pS2;
+	delete [] pS2;
 	delete pV1;
 	delete[] pV2;
 

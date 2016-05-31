@@ -139,9 +139,9 @@ void MemMngr::atExit() noexcept {
 
 	else {
 		cout << endl << endl;
-		cout << "No. of memory leaks: " << leaks.length << endl;
-		cout << "Total size of leaks: " << sizeOfLeaks << " bytes" << endl;
-		cout << "Max. memory used:    " << sizeTotal << " bytes" << endl;
+		cout << "No. of memory leaks: " << setw(ALLOC_NUMBER_LENGTH) << right << leaks.length << endl;
+		cout << "Total size of leaks: " << setw(ALLOC_SIZE_LENGTH) << right << sizeOfLeaks << " bytes" << endl;
+		cout << "Max. memory used:    " << setw(ALLOC_SIZE_LENGTH) << right << sizeTotal << " bytes" << endl;
 
 		if (leaks.length > 0)
 			cout << endl;
